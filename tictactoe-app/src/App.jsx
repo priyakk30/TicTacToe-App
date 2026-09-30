@@ -23,7 +23,7 @@ import "./App.css";
   return(
     <div>
         <h1 style={{display: "flex", justifyContent: "center",}}>Tic Tac Toe</h1>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 100px)",gridTemplateRows: "repeat(3, 100px)",}}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 100px)",gridTemplateRows: "repeat(3, 100px)", backgroundColor: "white", border: "1px solid black"}}>
             {squares.map((square, index) => (
                 <button key={index} className="square" onClick={() => handleClick(index)}>{square}</button>
             ))}

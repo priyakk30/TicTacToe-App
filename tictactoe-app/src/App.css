@@ -1,6 +1,6 @@
 #root {
-  background-color: black;
-  color: gold;
+  background-color: lightgray;
+  color: black;
   min-height: 100vh;
   display: flex;
   justify-content: center;
