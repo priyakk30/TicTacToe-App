@@ -13,8 +13,8 @@ const io = new Server(httpServer, {
   cors: {
     origin: [
         "http://localhost:5173",
-        process.env.CLIENT_URL
-    ].filter(Boolean),
+        /^https:\/\/.*\.vercel\.app$/
+    ],
     methods: ["GET", "POST"]
   }
 });
