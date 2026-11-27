@@ -11,7 +11,10 @@ app.use(cors());
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: [
+        "http://localhost:5173",
+        process.env.CLIENT_URL
+    ].filter(Boolean),
     methods: ["GET", "POST"]
   }
 });
